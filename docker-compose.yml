@@ -1,0 +1,53 @@
+version: "3.9"
+services:
+  # Backend: Spring Boot
+  backend:
+    image: maven:latest
+    container_name: backend
+    restart: always
+    depends_on:
+      database:
+        condition: service_healthy
+    volumes:
+      - ./backend/target/backend-0.0.1-SNAPSHOT.jar:/usr/src/app/target/app.jar
+    entrypoint: java -jar /usr/src/app/target/app.jar
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mysql://database:3306/creditcard
+    ports:
+      - "3309:8080"
+    tty: true
+  # Frontend: React/Typescript + Vite
+  frontend:
+    image: node:latest
+    container_name: frontend
+    restart: always
+    depends_on:
+      - backend
+    volumes:
+      - ./frontend:/srv/app
+    entrypoint: /bin/bash -c "npm install && npm run dev"
+    ports:
+      - "3308:3308"
+    working_dir: /srv/app
+    tty: true
+  # Database: MySQL
+  database:
+    image: mysql:latest
+    container_name: database
+    restart: always
+    volumes:
+      - ./database/sql-scripts:/docker-entrypoint-initdb.d/
+      - howzat:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: creditcard
+    ports:
+      - "3307:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-proot"]
+      retries: 3
+      timeout: 5s
+      interval: 5s
+
+volumes:
+  howzat:

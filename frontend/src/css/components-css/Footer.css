@@ -1,0 +1,16 @@
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 1920px;
+    margin: auto;
+    bottom: 0;
+    background-color: #17181d;
+    color: #fcd9b8;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+
+/*# sourceMappingURL=Footer.css.map */

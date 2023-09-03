@@ -1,0 +1,60 @@
+.faq-heading {
+    border-bottom: #777;
+    padding: 20px 60px;
+    margin-top: 0;
+    color: white !important;
+}
+
+.faq-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hr-line {
+    width: 60%;
+    margin: auto;
+}
+
+.faq-page {
+    color: white !important;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+
+.faq-body {
+    margin: auto;
+    width: 50%;
+    padding: auto;
+}
+
+.active,
+.faq-page:hover {
+    background-color: darkgoldenrod;
+}
+
+.faq-body {
+    color: white !important;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+}
+
+.faq-page:after {
+    /* Unicode character for "plus" sign (+) */
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    /* Unicode character for "minus" sign (-) */
+    content: "\2796";
+}

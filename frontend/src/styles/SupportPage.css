@@ -1,0 +1,45 @@
+.support-div{
+    margin-top: 80px;
+    
+}
+
+.description-grid{
+    height: 100px;
+   
+}
+
+.contact-container {
+    background-color: white;
+    margin-top: 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding-bottom: 20px;
+    
+}
+
+.address-contact{
+    padding-top: 5px;
+}
+
+.heading-p{
+    font-weight: bold;
+    
+}
+
+.small-text{
+    font-size: 11px;
+}
+
+.address-contact-item{
+    width:150px;
+    
+   
+}
+
+.contact-div-element{
+    margin-top:25px;
+    
+    width: 100%;
+}
+
+

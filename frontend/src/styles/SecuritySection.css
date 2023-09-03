@@ -1,0 +1,39 @@
+.security-header {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.twoFA-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: fit-content;
+}
+
+.security-buttons {
+    width: fit-content;
+}
+
+.recovery-codes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border: solid black 1px;
+    width: fit-content;
+    padding: 0px 10px;
+    border-radius: 5px;
+    background: #cdc9c9
+}
+
+.copy-button {
+    display: flex;
+}
+
+.password-textfields {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    gap: 1rem;
+}

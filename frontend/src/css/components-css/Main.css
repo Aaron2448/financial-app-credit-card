@@ -1,0 +1,17 @@
+.main-body {
+    position: absolute;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    top: 60px;
+    min-height: 100%;
+    height: fit-content;
+    padding-bottom: 10rem;
+    width: 100%;
+    background-color: #292c35;
+    max-width: 1920px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/*# sourceMappingURL=Main.css.map */

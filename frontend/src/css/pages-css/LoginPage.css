@@ -1,0 +1,35 @@
+.form-container {
+  background-color: white;
+  margin-top: 5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding-bottom: 20px;
+}
+
+/* height: 100%; */
+.form-h {
+  text-align: center;
+  color: #17181d;
+}
+
+.signup-p {
+  float: right;
+  color: white;
+  margin-right: 5%;
+}
+.signup-p a {
+  text-decoration: underline;
+  color: white;
+}
+.signup-p a:hover {
+  text-decoration: underline;
+  color: #f7ad19;
+}
+
+.forgot-password-a {
+  color: #17181d;
+  text-decoration: underline;
+  float: right;
+}
+
+/*# sourceMappingURL=LoginPage.css.map */

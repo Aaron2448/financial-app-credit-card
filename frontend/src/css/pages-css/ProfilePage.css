@@ -1,0 +1,74 @@
+.profile-page {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.profile-page-contents {
+    margin-left: 15rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    margin-left: 10rem;
+}
+
+.profile-page-header-profile {
+    position: absolute;
+    top: 0;
+}
+
+.profile-page-header-customer {
+    display: flex;
+    flex-direction: row;
+}
+
+.pprofile-page-header-customer-icon-image {
+    width: 2rem;
+    height: 2rem;
+    object-fit: cover;
+}
+
+.profile-page-header-customer-details {
+    display: inline-block;
+    justify-self: flex-end;
+    margin-left: 5em;
+    color: white;
+}
+
+.profile-page-header-customer-details p {
+    margin: 0;
+}
+
+.profile-page-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 17em;
+    width: 70%;
+}
+
+.profile-page-buttons button {
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    justify-content: flex-start;
+    font-size: 1.5em;
+}
+
+.profile-page-links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 17em;
+    width: 70%;
+}
+
+.profile-page-links button {
+    justify-content: space-between;
+    font-size: 1.5em;
+}

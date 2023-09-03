@@ -1,0 +1,113 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-width: 1920px;
+    margin: 10px;
+    height: 40px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.howzart-logo {
+    display: inline-block;
+    width: 100%;
+}
+
+.logo-link {
+    margin-left: 2rem;
+    width: 150px;
+}
+
+
+/* Can remove this color property once the logo has been added */
+
+
+/* color: #17181d; */
+
+.button-group {
+    text-align: right;
+    margin-right: 50px;
+}
+
+.button-group-logged-in {
+    text-align: right;
+}
+
+.button-group-logged-in button,
+.button-group button {
+    margin-left: 10px;
+}
+
+.button-group-logged-in a,
+.button-group a {
+    margin-left: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #17181d;
+}
+
+.button-group-logged-in a:hover,
+.button-group a:hover {
+    color: #f7ad19;
+    text-decoration: underline;
+}
+
+.user-name-dropdown {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    /* Show the dropdown menu on hover */
+}
+
+.user-name-dropdown:hover .user-name-dropdown-content {
+    display: block;
+}
+
+.user-name-dropdown-h {
+    color: #17181d;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.user-name-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 35px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.user-name-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.user-name-dropdown-content a:hover {
+    color: #f7ad19;
+    background-color: #f1f1f1;
+}
+
+.logged-in-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: end;
+    gap: 2rem;
+    margin-right: 2rem;
+}
+
+
+/*# sourceMappingURL=Header.css.map */

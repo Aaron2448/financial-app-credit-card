@@ -1,0 +1,18 @@
+.button-settings {
+    padding: 20px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.button-individual {
+    margin: 20px;
+    margin-top: 30px;
+}
+
+.settings-top-header {
+    margin-left: 15rem;
+    color: white;
+    width: fit-content;
+}
